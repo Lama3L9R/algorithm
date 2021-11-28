@@ -8,8 +8,7 @@
 - 迭代版本 => `primefactors_recursive.py`
 
 ### search24
-
-计划重写，老版本(android项目): `Lama3L9R/24Calc`
+- Python 迭代 => `24calc.py` [`CLI`]
 
 ### log:
 - `logimpl.py`
