@@ -1,3 +1,7 @@
+default_operators = {
+    ""
+}
+
 """
 Use these'+','-','*' and'/' operators and the given four numbers to calculate all possible expressions for 24
 """
@@ -9,13 +13,21 @@ def calc24(arr):
   return create_expr(arr, operators)
 
 """
+Extended calc 24
+
+Support more than 4 numbers and more than 4 operators
+"""
+def exc24(nums, operators: map(str, int)):
+    pass
+
+"""
 Create all expressions and check them
 
 Now 'ops' and 'nums' are not supported to be others
 """
-def create_expr(nums, ops, expr = [], result = []):
+def create_expr(nums, ops, expr_max_len = 7, expr = [], result = []):
   expr_len = len(expr)
-  if expr_len == 7:
+  if expr_len == expr_max_len:
     if eval_expr(expr) == 24:
       result.append(expr)
 
